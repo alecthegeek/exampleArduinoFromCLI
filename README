@@ -1,0 +1,15 @@
+A really trivial example on how to upload an Arduino program using a make file
+
+1. See http://mjo.tc/atelier/2009/02/arduino-cli.html
+2. This example works with the Freetonics TwentyTen board
+3. See also https://github.com/freetronics/TwentyTen/issues/1
+
+To discover what settings work with your board set the option
+`upload.verbose=true` in the file `~/.arduino/preferences.txt`
+
+You can then review the output to discover the upload options that work from the IDE.
+
+In my case I had to change the baud rate as shown in the makefile. You can review the file
+`$(ARDUINO_DIR)/Arduino.mk` to discover what make macros you modify/set
+
+This project also shows a sample `.gitignore`
